@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inserción</title>
+    <link rel="stylesheet" href="./css/MiInserción.css">
+    <link rel="shortcut icon" href="./img/balon.favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <form action="login.html" method="post">
+
+            <h1>Inserción de Datos</h1>
+
+            <!-- Campo de formulario de texto -->
+            <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+
+                <label for="hermanos">Hermanos:</label>
+                <input type="number" name="hermanos" id="hermanos" placeholder="Contándote a ti" min="1" max="50" step="0.1" required>
+            </fieldset>
+
+            <div class="sexo-options">
+                <input type="radio" name="sexo" id="male" value="male">
+                <label for="male"> Hombre</label>
+
+                <input type="radio" name="sexo" id="female" value="female">
+                <label for="female"> Mujer</label>
+
+                <input type="radio" name="sexo" id="other" value="other">
+                <label for="other"> Otro</label>
+            </div>
+
+            <label for="ciclo">Ciclo en que está matriculado:</label>
+            <select name="ciclo" id="ciclo">
+                <option value="">-- Elige un ciclo --</option>
+                <option value="DAM">DAM</option>
+                <option value="DAW">DAW</option>
+                <option value="ASIR">ASIR</option>
+                <option value="SMR">SMR</option>
+            </select>
+
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" rows="5" placeholder="Escribe algo"></textarea>
+
+            <input type="checkbox" name="terminos" id="terminos" required>
+            <label for="terminos">Acepto las condiciones</label>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

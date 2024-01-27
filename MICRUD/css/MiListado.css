@@ -1,0 +1,110 @@
+/****************************************************************/
+/*      estilo de CRUD                                          */
+/*      author:  Juan Carlos Ocaña Heredia                      */
+/*      version. 1.0                                            */
+/*      comment: CRUD for Lenguaje de Marcas - 1ºDAM            */
+/****************************************************************/
+body {
+    background: linear-gradient(to right, #2C3E50, #4CAF50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFF;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.container:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.table-header,
+.table-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.col-1,
+.col-5 {
+    flex: 1;
+}
+
+.col-2,
+.col-3,
+.col-4 {
+    flex: 2;
+}
+
+/* Estilos para los íconos y botones */
+
+.fa-plus-square,
+.fa-pencil-alt,
+.fa-trash,
+.fa-futbol {
+    color: #FFF;
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.fa-plus-square:hover,
+.fa-pencil-alt:hover,
+.fa-trash:hover,
+.fa-futbol:hover {
+    color: #FFD700;
+}
+
+.btn-add,
+.btn-edit,
+.btn-delete {
+    background: none;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-add:hover,
+.btn-edit:hover,
+.btn-delete:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
