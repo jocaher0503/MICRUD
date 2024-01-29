@@ -11,44 +11,57 @@
     <div class="container">
         <form action="login.html" method="post">
             <h1>Data Insertion</h1>
-            <fieldset>
-                <label for="nombre">Name:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Name" required>
-
-                <label for="apellidos">Surname:</label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Surname" required>
-
-                <label for="hermanos">Team:</label>
-                <input type="text" name="team" id="team" placeholder="Your Team" required>
-            </fieldset>
-
-            <div class="sexo-options">
-                <input type="radio" name="sexo" id="male" value="male">
-                <label for="male"> Men</label>
-
-                <input type="radio" name="sexo" id="female" value="female">
-                <label for="female"> Women</label>
-
-                <input type="radio" name="sexo" id="other" value="other">
-                <label for="other"> Other</label>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
             </div>
 
-            <label for="ciclo">Position in which he plays:</label>
-            <select name="ciclo" id="ciclo">
-                <option value="">-- Choose your postion --</option>
-                <option value="Goalkeeper">Goalkeeper</option>
-                <option value="Defender">Defender</option>
-                <option value="Midfielder">Midfielder</option>
-                <option value="Forward">Forward</option>
-            </select>
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname" placeholder="Enter your surname" required>
+            </div>
 
-            <label for="comentario">Coment:</label>
-            <textarea name="comentario" id="comentario" rows="5" placeholder="Write something"></textarea>
+            <div class="form-group">
+                <label for="team">Team:</label>
+                <input type="text" name="team" id="team" placeholder="Enter your team" required>
+            </div>
 
-            <input type="checkbox" name="terminos" id="terms" required>
-            <label for="terminos">Acept the conditions</label>
+            <div class="sexo-options">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" name="sex" id="male" value="male">
+                    <label for="male"> Men</label>
 
-            <input type="submit" value="Enviar">
+                    <input type="radio" name="sex" id="female" value="female">
+                    <label for="female"> Women</label>
+
+                    <input type="radio" name="sex" id="other" value="other">
+                    <label for="other"> Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="ciclo">Position:</label>
+                <select name="ciclo" id="ciclo">
+                    <option value="">-- Choose your position --</option>
+                    <option value="Goalkeeper">Goalkeeper</option>
+                    <option value="Defender">Defender</option>
+                    <option value="Midfielder">Midfielder</option>
+                    <option value="Forward">Forward</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea name="comment" id="comment" rows="3" placeholder="Write something"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">Accept the conditions</label>
+            </div>
+
+            <button class="submit-button" type="submit">Submit</button>
         </form>
     </div>
 </body>

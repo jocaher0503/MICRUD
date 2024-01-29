@@ -5,6 +5,7 @@
 /*      comment: CRUD for Lenguaje de Marcas - 1ºDAM            */
 /****************************************************************/
 
+
 body {
     background: linear-gradient(to right, #2C3E50, #4CAF50);
     display: flex;
@@ -20,9 +21,10 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 80%;
+    max-width: 500px;
     text-align: center;
     transition: background 0.3s ease-in-out;
     overflow: hidden;
@@ -36,13 +38,58 @@ body {
     margin-bottom: 20px;
 }
 
-fieldset {
+.form-group {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .sexo-options {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
     gap: 10px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: #FFF;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
 }
