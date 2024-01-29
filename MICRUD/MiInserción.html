@@ -10,18 +10,16 @@
 <body>
     <div class="container">
         <form action="login.html" method="post">
-
             <h1>Data Insertion</h1>
-
             <fieldset>
                 <label for="nombre">Name:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="nombre" id="nombre" placeholder="Name" required>
 
                 <label for="apellidos">Surname:</label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" required>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Surname" required>
 
                 <label for="hermanos">Team:</label>
-                <input type="number" name="hermanos" id="hermanos" placeholder="Contándote a ti" min="1" max="50" step="0.1" required>
+                <input type="text" name="team" id="team" placeholder="Your Team" required>
             </fieldset>
 
             <div class="sexo-options">
@@ -38,16 +36,16 @@
             <label for="ciclo">Position in which he plays:</label>
             <select name="ciclo" id="ciclo">
                 <option value="">-- Choose your postion --</option>
-                <option value="DAM">Goalkeeper</option>
-                <option value="DAW">Defender</option>
-                <option value="ASIR">Midfielder</option>
-                <option value="SMR">Forward</option>
+                <option value="Goalkeeper">Goalkeeper</option>
+                <option value="Defender">Defender</option>
+                <option value="Midfielder">Midfielder</option>
+                <option value="Forward">Forward</option>
             </select>
 
             <label for="comentario">Coment:</label>
-            <textarea name="comentario" id="comentario" rows="5" placeholder="Escribe algo"></textarea>
+            <textarea name="comentario" id="comentario" rows="5" placeholder="Write something"></textarea>
 
-            <input type="checkbox" name="terminos" id="terminos" required>
+            <input type="checkbox" name="terminos" id="terms" required>
             <label for="terminos">Acept the conditions</label>
 
             <input type="submit" value="Enviar">

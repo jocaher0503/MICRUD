@@ -4,6 +4,7 @@
 /*      version. 1.0                                            */
 /*      comment: CRUD for Lenguaje de Marcas - 1ºDAM            */
 /****************************************************************/
+
 body {
     background: linear-gradient(to right, #2C3E50, #4CAF50);
     display: flex;
@@ -35,17 +36,13 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos específicos para el formulario */
-
 fieldset {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.sex-options {
+.sexo-options {
     display: flex;
     gap: 10px;
 }
-
-/* Puedes añadir más estilos según tus preferencias */
