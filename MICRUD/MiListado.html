@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LISTADO DE PARTIDOS</title>
+    <title>LIST OF MATCHES</title>
     <link rel="stylesheet" href="./css/MiListado.css">
     <link rel="shortcut icon" href="./img/balon.favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-lZ5UUpNbeWqLZ3vQV4nZl+quO1/W1fWShNzLMU0D6BRJQrB4LIv5CjgWz8d+SYAhMc0ZMzPDz8y92JiGuvM6Ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <h2>Lista de Partidos</h2>
+        <h2>List of Matches</h2>
         <ul class="responsive-table">
             <li class="table-header">
-                <div class="col col-1">ID Partido</div>
-                <div class="col col-2">Equipo Local</div>
-                <div class="col col-3">Equipo Visitante</div>
-                <div class="col col-4">Resultado</div>
-                <div class="col col-5">Acciones</div>
+                <div class="col col-1">ID Team</div>
+                <div class="col col-2">Local Team</div>
+                <div class="col col-3">Away Team</div>
+                <div class="col col-4">Result</div>
+                <div class="col col-5">Options</div>
             </li>
             <li class="table-row">
                 <div class="col col-1" data-label="ID Partido">12345</div>
@@ -25,13 +25,12 @@
                 <div class="col col-3" data-label="Equipo Visitante">Real Madrid</div>
                 <div class="col col-4" data-label="Resultado">2 - 1</div>
                 <div class="col col-5" data-label="Acciones">
-                    <button class="btn-edit"><i class="fas fa-pencil-alt"></i> Editar</button>
-                    <button class="btn-delete"><i class="fas fa-trash"></i> Borrar</button>
+                    <button class="btn-edit"><i class="fas fa-pencil-alt"></i> Edit</button>
+                    <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
                 </div>
             </li>
-            <!-- Agrega más partidos según sea necesario -->
         </ul>
-        <button class="btn-add"><i class="fas fa-plus-square"></i> Añadir Partido</button>
+        <button class="btn-add"><i class="fas fa-plus-square"></i> Add Match</button>
     </div>
 </body>
 </html>
